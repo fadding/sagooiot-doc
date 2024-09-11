@@ -1,3 +1,6 @@
+---
+sidebar_position: 0
+---
 # 开发环境
 
 ## 基础环境：
@@ -12,24 +15,25 @@
 
 ## 开发环境
 
-需要Go1.16以上版本
-
-**推荐使用Go1.20.8**
-
-注意GO的版本最高使用到Go1.20.8，不要使用Go1.20.8以上版本，否则会出现编译错误。
-
-GoFrame V2.2.0
-GoFrame CLI Tool v2.2.0
-详见 https://goframe.org
+|         | SagooIoT V1.x 版本 | SagooIoT V2.x版本                |
+| ------- | ------------------ | -------------------------------- |
+| GO      | v1.6.0 - v1.20.8   | v1.21.5 以上，可以使用最新版的go |
+| GoFrame | v2.2.0             | v2.6.x 最新版                    |
 
 
-（推荐使用GoLand开发工具开发）
+:::tip 提示
+开发过程中注意GoFrame的版本，不同版本的CLI工具可能会有不同的命令
+:::
+
+推荐使用GoLand开发工具开发，方便调试和代码管理。
+
+推荐安装go多版本控制，方便不同的go版本之间的切换使用 https://github.com/voidint/g/blob/master/README_CN.md
 
 需要在go.mod中引用
 
 ```go
 require (
-    github.com/gogf/gf/v2 v2.2.0
+    github.com/gogf/gf/v2 v2.6.1
 )
 ```
 
@@ -54,7 +58,7 @@ tables 为表名，可以配置多个表，用英文逗号分隔
 2，在控制台执行命令 `gf gen dao`
 
 ### 生成业务代码
-详细见这儿里【[代码生成](/develop/gencode/gen.md)】
+详细见这儿里【[代码生成](../gencode/gen.md)】
 
 ### 自动规范生成Service
 
